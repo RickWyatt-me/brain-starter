@@ -32,7 +32,7 @@ cd my-brain
 git config core.hooksPath .githooks
 
 # 3. Install the loader skill where Claude Code finds it globally
-cp -R .claude/skills/brain-loader ~/.claude/skills/brain-loader
+cp -R .claude/skills/brain-loader ~/.claude/skills/
 ```
 
 Then fill in the placeholders — every `{CURLY_TOKEN}` is yours to replace:
