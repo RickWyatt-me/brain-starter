@@ -1,0 +1,5 @@
+#!/bin/sh
+# Auto-pull on checkout so a session starts from the freshest brain.
+# Silent and best-effort on purpose: offline must never block work.
+git remote get-url origin >/dev/null 2>&1 || exit 0
+git pull -q --rebase origin HEAD 2>/dev/null || true

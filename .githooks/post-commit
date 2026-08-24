@@ -1,0 +1,5 @@
+#!/bin/sh
+# Auto-push after every commit so the brain is never only-local.
+# Silent and best-effort on purpose: an offline machine must never fail a commit.
+git remote get-url origin >/dev/null 2>&1 || exit 0
+git push -q origin HEAD 2>/dev/null || true

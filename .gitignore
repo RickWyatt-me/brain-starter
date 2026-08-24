@@ -1,0 +1,11 @@
+# Secrets — a brain repo should hold decisions, never credentials
+.env
+.env.*
+*.local.*
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
